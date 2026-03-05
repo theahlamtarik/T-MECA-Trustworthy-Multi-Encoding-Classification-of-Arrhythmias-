@@ -13,35 +13,7 @@ Cardiac arrhythmias affect over 300 million people worldwide. While deep learnin
 
 ## Architecture
 
-```
-Raw ECG (187 samples, MIT-BIH)
-        │
-        ▼
-┌─────┬─────┬─────┬─────┐
-│ GAF │  RP │ MTF │ CWT │    Signal-to-Image Encoding (1D → 2D)
-└──┬──┴──┬──┴──┬──┴──┬──┘
-   └─────┴─────┴─────┘
-        │
-        ▼
-   4-Channel Image (4 × 64 × 64)
-        │
-        ▼
-   ResNet-18 + FCA Attention
-   (Qin et al., ICCV 2021) + DropBlock
-        │
-        ▼
-   Focal Loss (√-inv freq.) · Mixup (α=0.1) · Gradient Clipping
-        │
-        ▼
-  ┌─────┴─────┐
-  │ Prediction │──► MC-Dropout (30 passes)
-  └─────┬─────┘    Epistemic vs Aleatoric
-        │
-        ▼
-  Selective Referral
-  Confident (95%) → Automated
-  Uncertain (5%)  → Cardiologist
-```
+![T-MECA Pipeline](results/pipeline.png)
 
 ## Key Results
 
@@ -94,11 +66,11 @@ An uncertainty-based trustworthiness operating curve shows that referring only *
 ```
 T-MECA/
 ├── README.md                          This file
-├── T_MECA_notebook.ipynb              Source notebook (V3)
-├── t-meca-notebook-v3_Runned.ipynb    Executed notebook with outputs
+├── T_MECA_notebook.ipynb              Executed notebook with all outputs
 ├── poster/
 │   └── T-MECA_poster.pdf             AgorAI Hackathon poster
 └── results/
+    ├── pipeline.png                   T-MECA architecture diagram
     ├── channel_ablation.png           Encoding importance heatmap
     ├── confusion_matrix.png           5-class confusion matrix
     ├── encoding_preview.png           Raw signal → 4 encodings
