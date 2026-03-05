@@ -1,0 +1,11 @@
+Metric,Value
+Accuracy (base),0.9841
+F1-Macro (base),0.9163
+Accuracy (TTA),0.9693
+F1-Macro (TTA),0.8309
+"Accuracy (confident, MC-Dropout)",0.9909
+"F1-Macro (confident, MC-Dropout)",0.9473
+Referred to expert (%),10.0%
+Learned temperature (T),1.2594
+ECE (before calibration),0.3652
+ECE (after calibration),0.4584

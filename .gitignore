@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Data (too large for GitHub)
+data/
+*.zip
+*.pt
+
+# Old notebooks and scripts (not part of T-MECA)
+ECG_*.ipynb
+ecg-*.ipynb
+*Runned*.ipynb
+!t-meca-notebook-v3_Runned.ipynb
+
+# Legacy files
+RESULTS_*.md
+*_extracted.py
+*.tex
+*.txt
+PRESENTATION*.md
+FINAL_*.md
+dashboard/
+encoding/
+model/
+utils/
+add_*.py
+create_*.py
+extract_*.py
+read_*.py
+loso_*.py
+inference_*.py
+test_*.py
+main.py
+preprocessing.py
+recurrence_plot.py
+presentation_script*.py
+v*_results_extracted.py
+RESULTS_V1_V2_PERMANENT.py
+poster_diagrams/
+
+# Gemini
+.gemini/
