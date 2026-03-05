@@ -13,7 +13,7 @@ Cardiac arrhythmias affect over 300 million people worldwide. While deep learnin
 
 ## Architecture
 
-![T-MECA Pipeline](results/pipeline.png)
+![T-MECA Pipeline](results/pipeline_README.png)
 
 ## Key Results
 
