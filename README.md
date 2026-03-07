@@ -1,6 +1,5 @@
 # T-MECA: Trustworthy Multi-Encoding Classification of Arrhythmias
 
-> **AgorAI Spring School Hackathon 2026**  
 > Ahlam TARIK — EIDIA, Euromed University of Fes (UEMF)
 
 ## Overview
@@ -67,8 +66,6 @@ An uncertainty-based trustworthiness operating curve shows that referring only *
 T-MECA/
 ├── README.md                          This file
 ├── T_MECA_notebook.ipynb              Executed notebook with all outputs
-├── poster/
-│   └── T-MECA_poster.pdf             AgorAI Hackathon poster
 └── results/
     ├── pipeline.png                   T-MECA architecture diagram
     ├── channel_ablation.png           Encoding importance heatmap
@@ -91,4 +88,4 @@ T-MECA/
 
 ## License
 
-This project is for academic and research purposes under the AgorAI Spring School 2026.
+This project is for academic and research purposes.
